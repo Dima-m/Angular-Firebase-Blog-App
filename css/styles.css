@@ -11,7 +11,8 @@ textarea{
   white-space: pre-line;
 }
 .btn-add {
-	margin-top: 7px;
+	margin-top: 5px;
+	margin-left: 15px;
 }
 .list-group {
 	margin-top: 20px;

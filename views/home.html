@@ -1,3 +1,7 @@
+<div class="row">
+  <button type="button" class="btn btn-primary btn-lg btn-add" data-toggle="modal" data-target="#enterBlog">Post something</button>
+</div>
+
 <div class="modal fade" id="enterBlog" ng-controller="EntryCtrl as entry">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -8,7 +12,7 @@
         </button>
             </div>
             <div class="modal-body">
-                <form ng-submit="entry.saveBlog()">
+                <form id="addModal" ng-submit="entry.saveBlog()">
                     <div class="form-group">
                         <label for="blogTitle">Title</label>
                         <input type="text" id="blogTitle" class="form-control" placeholder="Enter your post title here" ng-model="entry.blog.title" />
@@ -18,7 +22,7 @@
                         <textarea name="blogEntry" id="blogEntry" cols="30" rows="10" class="form-control blog" placeholder="Enter your post" ng-model="entry.blog.entry"></textarea>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-success" type="submit">Save Post</button>
+                        <button class="btn btn-success" type="submit" onclick="hidemodal();">Save Post</button>
                     </div>
                 </form>
             </div>

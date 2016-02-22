@@ -1,0 +1,17 @@
+<form ng-submit="entry.saveBlog()">
+  <div class="form-group col-sm-11">
+    <label for="blogTitle">Title</label>
+    <input type="text" id="blogTitle" class="form-control" placeholder="Enter your blog title here" ng-model="entry.blog.title" />
+  </div>
+  <div class="form-group col-sm-11">
+    <label for="blogEntry">Entry</label>
+      <textarea name="blogEntry" id="blogEntry" cols="30" rows="20"
+                class="form-control blog" ng-model="entry.blog.entry"></textarea>
+
+  </div>
+  <div class="form-group col-sm-11">
+    <button class="btn btn-success" type="submit">
+    Save Blog
+    </button>
+  </div>
+</form>

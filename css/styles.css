@@ -1,0 +1,23 @@
+h3{
+  display: inline-block;
+}
+.close{
+  opacity: 1;
+}
+textarea{
+  resize: none;
+}
+.blog{
+  white-space: pre-line;
+}
+.btn-add {
+	margin-top: 7px;
+}
+.list-group {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.goBack {
+	text-decoration: none;
+	color: #fff;
+}

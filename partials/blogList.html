@@ -1,0 +1,10 @@
+<div class="list-group blog-list" ng-repeat="blog in list.blogs">
+    <a ng-href='#/blog/{{blog.$id}}' class="list-group-item">
+        <h2 class="blog-post-title">{{blog.title}}</h2>
+        <p>{{blog.entry | limitTo: 200}}...</p>
+        <cite>Posted on {{blog.date | date:"MM/dd/yyyy"}}</cite>
+    </a>
+    <button class="btn  .btn-warning. pull-right" ng-click="list.blogs.$remove(blog)">
+            Delete
+    </button>
+</div>
